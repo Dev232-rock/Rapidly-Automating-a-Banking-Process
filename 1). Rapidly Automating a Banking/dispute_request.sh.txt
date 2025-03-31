@@ -1,0 +1,8 @@
+curl -X POST "http://localhost:3000/api/disputes" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "customerId": "12345",
+           "customerType": "VIP",
+           "description": "Unauthorized transaction detected on my card.",
+           "amount": 2000
+         }'

@@ -1,0 +1,11 @@
+{
+    "customerId": "12345",
+    "disputeType": "Unauthorized Transaction",
+    "priority": "High",
+    "recommendation": "Escalate immediately to Fraud Team."
+}
+
+
+curl -X POST "http://localhost:3000/api/disputes" \
+     -H "Content-Type: application/json" \
+     -d @sample_request.json
